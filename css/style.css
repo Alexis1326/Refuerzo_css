@@ -203,7 +203,13 @@ body {
 body {
 	font: 14px/25px Arial, Helvetica, sans-serif;
 	font-family: 'Raleway', sans-serif;
-	background: #fff;
+	display: grid;
+	grid-template-columns: 20% 60% 20%;
+	background-image: url(../images/bg3.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 	color: #666;
 	font-size: 15px;
 	line-height: 1.6em;
@@ -211,13 +217,9 @@ body {
 }
 
 body .wrap-body {
-	background-image: url(../images/bg3.jpg);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
+	
 	color: #fff;
-	position: relative;
+	grid-column-start: 2;
 }
 
 /* body .wrap-body:before {content:"";display: block;height: 100%;position: absolute;top: 0;left: 0;width: 100%;visibility: visible;background-color: rgba(0, 0, 0, .6);} */
